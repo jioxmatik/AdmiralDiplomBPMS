@@ -22,17 +22,19 @@
             <dataType>STRING</dataType>
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
-          <hideColumn>true</hideColumn>
+          <hideColumn>false</hideColumn>
           <width>-1</width>
           <header>Account required ID</header>
-          <constraintValueType>3</constraintValueType>
+          <constraintValueType>1</constraintValueType>
           <factField>id</factField>
           <fieldType>String</fieldType>
-          <operator>!=</operator>
+          <operator>!= null</operator>
           <parameters/>
+          <binding>$accId</binding>
         </condition-column52>
       </conditions>
       <window>
+        <operator></operator>
         <parameters/>
       </window>
     </Pattern52>
@@ -115,7 +117,7 @@
       <conditions>
         <condition-column52>
           <typedDefaultValue>
-            <valueString>acc.id</valueString>
+            <valueString>$accId</valueString>
             <dataType>STRING</dataType>
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
@@ -230,7 +232,7 @@
       <conditions>
         <condition-column52>
           <typedDefaultValue>
-            <valueString>acc.id</valueString>
+            <valueString>$accId</valueString>
             <dataType>STRING</dataType>
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
@@ -380,8 +382,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>null</valueString>
-        <dataType>STRING</dataType>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -464,8 +467,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>null</valueString>
-        <dataType>STRING</dataType>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -548,8 +552,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>null</valueString>
-        <dataType>STRING</dataType>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -632,8 +637,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>null</valueString>
-        <dataType>STRING</dataType>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -716,8 +722,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>null</valueString>
-        <dataType>STRING</dataType>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -800,8 +807,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>null</valueString>
-        <dataType>STRING</dataType>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -884,8 +892,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>null</valueString>
-        <dataType>STRING</dataType>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -968,8 +977,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>null</valueString>
-        <dataType>STRING</dataType>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1052,8 +1062,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>null</valueString>
-        <dataType>STRING</dataType>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1136,8 +1147,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>null</valueString>
-        <dataType>STRING</dataType>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1220,8 +1232,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>null</valueString>
-        <dataType>STRING</dataType>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1304,8 +1317,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>null</valueString>
-        <dataType>STRING</dataType>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1388,8 +1402,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>null</valueString>
-        <dataType>STRING</dataType>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1472,8 +1487,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>null</valueString>
-        <dataType>STRING</dataType>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1556,8 +1572,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>null</valueString>
-        <dataType>STRING</dataType>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1640,8 +1657,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>null</valueString>
-        <dataType>STRING</dataType>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1724,8 +1742,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>null</valueString>
-        <dataType>STRING</dataType>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1808,8 +1827,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>null</valueString>
-        <dataType>STRING</dataType>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1892,8 +1912,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>null</valueString>
-        <dataType>STRING</dataType>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1976,8 +1997,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>null</valueString>
-        <dataType>STRING</dataType>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -2060,8 +2082,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>null</valueString>
-        <dataType>STRING</dataType>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -2144,8 +2167,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>null</valueString>
-        <dataType>STRING</dataType>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
