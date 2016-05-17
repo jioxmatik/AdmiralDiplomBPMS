@@ -24,90 +24,64 @@
           </typedDefaultValue>
           <hideColumn>true</hideColumn>
           <width>-1</width>
-          <header>Account has required</header>
+          <header>Account required</header>
           <constraintValueType>3</constraintValueType>
           <factField>id</factField>
           <fieldType>String</fieldType>
           <operator>!=</operator>
           <parameters/>
         </condition-column52>
+        <condition-column52>
+          <typedDefaultValue>
+            <valueString></valueString>
+            <dataType>STRING</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>Created less than</header>
+          <constraintValueType>3</constraintValueType>
+          <factField>date_entered</factField>
+          <fieldType>Date</fieldType>
+          <operator>&lt;=</operator>
+          <parameters/>
+        </condition-column52>
+        <condition-column52>
+          <typedDefaultValue>
+            <valueString></valueString>
+            <dataType>STRING</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>Created greater than</header>
+          <constraintValueType>3</constraintValueType>
+          <factField>date_entered</factField>
+          <fieldType>Date</fieldType>
+          <operator>&gt;</operator>
+          <parameters/>
+        </condition-column52>
+        <condition-column52>
+          <typedDefaultValue>
+            <valueString></valueString>
+            <dataType>STRING</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>false</hideColumn>
+          <width>171</width>
+          <header>Trade Operation less than</header>
+          <constraintValueType>3</constraintValueType>
+          <factField>px_last_trade_operation_date</factField>
+          <fieldType>Date</fieldType>
+          <operator>&lt;=</operator>
+          <parameters/>
+        </condition-column52>
       </conditions>
       <window>
+        <operator></operator>
         <parameters/>
       </window>
     </Pattern52>
-    <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
-      <hideColumn>false</hideColumn>
-      <width>-1</width>
-      <header>Account created 15 days age</header>
-      <constraintValueType>1</constraintValueType>
-      <parameters/>
-      <definition>
-        <org.drools.workbench.models.datamodel.rule.FreeFormLine>
-          <text>$acc.date_entered.getTime() &lt;=((new Date()).getTime() - (15*24*3600000))</text>
-        </org.drools.workbench.models.datamodel.rule.FreeFormLine>
-        <org.drools.workbench.models.datamodel.rule.FreeFormLine>
-          <text>$acc.date_entered.getTime() &gt;((new Date()).getTime() - (30*24*3600000))</text>
-        </org.drools.workbench.models.datamodel.rule.FreeFormLine>
-      </definition>
-      <childColumns>
-        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
-          <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>Account created 15 days age</header>
-          <constraintValueType>1</constraintValueType>
-          <fieldType>Boolean</fieldType>
-          <parameters/>
-          <varName></varName>
-        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
-      </childColumns>
-    </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
-    <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
-      <hideColumn>false</hideColumn>
-      <width>-1</width>
-      <header>Account created 30 days ago</header>
-      <constraintValueType>1</constraintValueType>
-      <parameters/>
-      <definition>
-        <org.drools.workbench.models.datamodel.rule.FreeFormLine>
-          <text>$acc.date_entered.getTime() &lt;=((new Date()).getTime() - (30*24*3600000))</text>
-        </org.drools.workbench.models.datamodel.rule.FreeFormLine>
-      </definition>
-      <childColumns>
-        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
-          <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>Account created 30 days ago</header>
-          <constraintValueType>1</constraintValueType>
-          <fieldType>Boolean</fieldType>
-          <parameters/>
-          <varName></varName>
-        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
-      </childColumns>
-    </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
-    <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
-      <hideColumn>false</hideColumn>
-      <width>-1</width>
-      <header>Last operation trage 15 days ago</header>
-      <constraintValueType>1</constraintValueType>
-      <parameters/>
-      <definition>
-        <org.drools.workbench.models.datamodel.rule.FreeFormLine>
-          <text>$acc.px_last_trade_operation_date.getTime() &lt;=((new Date()).getTime() - (15*24*3600000))</text>
-        </org.drools.workbench.models.datamodel.rule.FreeFormLine>
-      </definition>
-      <childColumns>
-        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
-          <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>Last operation trage 15 days ago</header>
-          <constraintValueType>1</constraintValueType>
-          <fieldType>Boolean</fieldType>
-          <parameters/>
-          <varName></varName>
-        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
-      </childColumns>
-    </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
     <Pattern52>
       <factType>PxCustomerStageAgregate</factType>
       <boundName>agregate</boundName>
@@ -144,6 +118,36 @@
           <valueList>1.Lead,2.No accounts,3.Demo-no trades,4.Demo,5.Ready to deposit,6.Bonus-no trades,7.Bonus,8.Deposited-no trades,9.Live</valueList>
           <parameters/>
         </condition-column52>
+        <condition-column52>
+          <typedDefaultValue>
+            <valueString></valueString>
+            <dataType>STRING</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>Moved less than</header>
+          <constraintValueType>3</constraintValueType>
+          <factField>stage_moved_date</factField>
+          <fieldType>Date</fieldType>
+          <operator>&lt;=</operator>
+          <parameters/>
+        </condition-column52>
+        <condition-column52>
+          <typedDefaultValue>
+            <valueString></valueString>
+            <dataType>STRING</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>Moved greater than</header>
+          <constraintValueType>3</constraintValueType>
+          <factField>stage_moved_date</factField>
+          <fieldType>Date</fieldType>
+          <operator>&gt;</operator>
+          <parameters/>
+        </condition-column52>
       </conditions>
       <window>
         <operator></operator>
@@ -151,78 +155,6 @@
       </window>
       <entryPointName></entryPointName>
     </Pattern52>
-    <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
-      <hideColumn>false</hideColumn>
-      <width>-1</width>
-      <header>Stage changed  between 15 and 30 days ago</header>
-      <constraintValueType>1</constraintValueType>
-      <parameters/>
-      <definition>
-        <org.drools.workbench.models.datamodel.rule.FreeFormLine>
-          <text>agregate.stage_moved_date.getTime() &lt;= (new Date()).getTime() - (15*24*3600000)</text>
-        </org.drools.workbench.models.datamodel.rule.FreeFormLine>
-        <org.drools.workbench.models.datamodel.rule.FreeFormLine>
-          <text>agregate.stage_moved_date.getTime() &gt; ((new Date()).getTime() - (30*24*3600000)</text>
-        </org.drools.workbench.models.datamodel.rule.FreeFormLine>
-      </definition>
-      <childColumns>
-        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
-          <hideColumn>false</hideColumn>
-          <width>180</width>
-          <header>Stage changed  between 15 and 30 days ago</header>
-          <constraintValueType>1</constraintValueType>
-          <fieldType>Boolean</fieldType>
-          <parameters/>
-          <varName></varName>
-        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
-      </childColumns>
-    </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
-    <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
-      <hideColumn>false</hideColumn>
-      <width>-1</width>
-      <header>Stage changed 30 days ago</header>
-      <constraintValueType>1</constraintValueType>
-      <parameters/>
-      <definition>
-        <org.drools.workbench.models.datamodel.rule.FreeFormLine>
-          <text>agregate.stage_moved_date.getTime() &lt;= (new Date()).getTime() - (30*24*3600000)</text>
-        </org.drools.workbench.models.datamodel.rule.FreeFormLine>
-      </definition>
-      <childColumns>
-        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
-          <hideColumn>false</hideColumn>
-          <width>155</width>
-          <header>Stage changed 30 days ago</header>
-          <constraintValueType>1</constraintValueType>
-          <fieldType>Boolean</fieldType>
-          <parameters/>
-          <varName></varName>
-        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
-      </childColumns>
-    </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
-    <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
-      <hideColumn>false</hideColumn>
-      <width>-1</width>
-      <header>Stage changed 15 days ago</header>
-      <constraintValueType>1</constraintValueType>
-      <parameters/>
-      <definition>
-        <org.drools.workbench.models.datamodel.rule.FreeFormLine>
-          <text>agregate.stage_moved_date.getTime() &lt;= (new Date()).getTime() - (15*24*3600000)</text>
-        </org.drools.workbench.models.datamodel.rule.FreeFormLine>
-      </definition>
-      <childColumns>
-        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
-          <hideColumn>false</hideColumn>
-          <width>147</width>
-          <header>Stage changed 15 days ago</header>
-          <constraintValueType>1</constraintValueType>
-          <fieldType>Boolean</fieldType>
-          <parameters/>
-          <varName></varName>
-        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
-      </childColumns>
-    </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
     <Pattern52>
       <factType>Message</factType>
       <boundName></boundName>
@@ -286,7 +218,7 @@
           <fieldValues>
             <org.drools.workbench.models.datamodel.rule.ActionFieldValue>
               <field>account_id</field>
-              <value>acc.id</value>
+              <value>$acc.id</value>
               <nature>3</nature>
               <type>String</type>
             </org.drools.workbench.models.datamodel.rule.ActionFieldValue>
@@ -311,7 +243,7 @@
       <childColumns>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
           <hideColumn>false</hideColumn>
-          <width>175</width>
+          <width>-1</width>
           <header>Insert Message</header>
           <varName>$description</varName>
           <fieldType>String</fieldType>
@@ -385,21 +317,18 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -413,25 +342,17 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>acc.id</valueString>
+        <valueString>$acc.id</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -469,21 +390,18 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <valueString>new Date(new Date().getTime() - (15*24*3600*1000))</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <valueString>new Date(new Date().getTime() - (30*24*3600*1000))</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -497,25 +415,17 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>acc.id</valueString>
+        <valueString>$acc.id</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -553,21 +463,18 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <valueString>new Date(new Date().getTime() - (30*24*3600*1000))</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -581,25 +488,17 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>acc.id</valueString>
+        <valueString>$acc.id</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -637,21 +536,18 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -665,25 +561,17 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <valueString>new Date(new Date().getTime() - (15*24*3600*1000))</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <valueString>new Date(new Date().getTime() - (30*24*3600*1000))</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>acc.id</valueString>
+        <valueString>$acc.id</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -721,21 +609,18 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -749,25 +634,17 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <valueString>new Date(new Date().getTime() - (30*24*3600*1000))</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>acc.id</valueString>
+        <valueString>$acc.id</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -805,21 +682,18 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -833,25 +707,17 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <valueString>new Date(new Date().getTime() - (15*24*3600*1000))</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <valueString>new Date(new Date().getTime() - (30*24*3600*1000))</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>acc.id</valueString>
+        <valueString>$acc.id</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -889,21 +755,18 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -917,25 +780,17 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <valueString>new Date(new Date().getTime() - (30*24*3600*1000))</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>acc.id</valueString>
+        <valueString>$acc.id</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -973,21 +828,18 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1001,25 +853,17 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <valueString>new Date(new Date().getTime() - (15*24*3600*1000))</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <valueString>new Date(new Date().getTime() - (30*24*3600*1000))</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>acc.id</valueString>
+        <valueString>$acc.id</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1057,21 +901,18 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1085,25 +926,17 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <valueString>new Date(new Date().getTime() - (30*24*3600*1000))</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>acc.id</valueString>
+        <valueString>$acc.id</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1141,21 +974,18 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1169,25 +999,17 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <valueString>new Date(new Date().getTime() - (15*24*3600*1000))</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <valueString>new Date(new Date().getTime() - (30*24*3600*1000))</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>acc.id</valueString>
+        <valueString>$acc.id</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1225,21 +1047,18 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1253,21 +1072,13 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <valueString>new Date(new Date().getTime() - (30*24*3600*1000))</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1309,21 +1120,18 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1337,25 +1145,17 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <valueString>new Date(new Date().getTime() - (15*24*3600*1000))</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <valueString>new Date(new Date().getTime() - (30*24*3600*1000))</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>acc.id</valueString>
+        <valueString>$acc.id</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1393,21 +1193,18 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1421,25 +1218,17 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <valueString>new Date(new Date().getTime() - (30*24*3600*1000))</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>acc.id</valueString>
+        <valueString>$acc.id</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1477,21 +1266,18 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1505,25 +1291,17 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <valueString>new Date(new Date().getTime() - (15*24*3600*1000))</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <valueString>new Date(new Date().getTime() - (30*24*3600*1000))</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>acc.id</valueString>
+        <valueString>$acc.id</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1561,21 +1339,18 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1589,25 +1364,17 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <valueString>new Date(new Date().getTime() - (30*24*3600*1000))</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>acc.id</valueString>
+        <valueString>$acc.id</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1645,21 +1412,18 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1673,25 +1437,17 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <valueString>new Date(new Date().getTime() - (15*24*3600*1000))</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <valueString>new Date(new Date().getTime() - (30*24*3600*1000))</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>acc.id</valueString>
+        <valueString>$acc.id</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1729,21 +1485,18 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1757,25 +1510,17 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <valueString>new Date(new Date().getTime() - (30*24*3600*1000))</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>acc.id</valueString>
+        <valueString>$acc.id</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1813,21 +1558,18 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <valueString>new Date(new Date().getTime() - (30*24*3600*1000))</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1841,25 +1583,17 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>acc.id</valueString>
+        <valueString>$acc.id</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1897,21 +1631,18 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1925,25 +1656,17 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <valueString>new Date(new Date().getTime() - (15*24*3600*1000))</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>acc.id</valueString>
+        <valueString>$acc.id</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1981,21 +1704,18 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -2009,25 +1729,17 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <valueString>new Date(new Date().getTime() - (15*24*3600*1000))</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>acc.id</valueString>
+        <valueString>$acc.id</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -2065,21 +1777,18 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -2093,25 +1802,17 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <valueString>new Date(new Date().getTime() - (15*24*3600*1000))</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>acc.id</valueString>
+        <valueString>$acc.id</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -2149,21 +1850,18 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -2177,25 +1875,17 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <valueString>new Date(new Date().getTime() - (15*24*3600*1000))</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>acc.id</valueString>
+        <valueString>$acc.id</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
