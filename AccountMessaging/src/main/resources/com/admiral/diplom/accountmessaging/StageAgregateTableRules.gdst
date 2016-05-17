@@ -166,7 +166,7 @@
             <dataType>STRING</dataType>
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
-          <hideColumn>false</hideColumn>
+          <hideColumn>true</hideColumn>
           <width>-1</width>
           <header>Check have exist Message</header>
           <constraintValueType>3</constraintValueType>
