@@ -4,4 +4,26 @@
 <property name="name" value="Set Customer.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
+<field position="0" name="acc_date_entered" type="InputDate" id="903865169">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;date_entered (acc)quot;"/>
+<property name="inputBinding" value="acc_in/date_entered"/>
+<property name="outputBinding" value="acc_out/date_entered"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="1" name="acc_id" type="InputText" id="800437674">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;id (acc)quot;"/>
+<property name="inputBinding" value="acc_in/id"/>
+<property name="outputBinding" value="acc_out/id"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="2" name="acc_px_last_trade_operation_date" type="InputDate" id="399818912">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;px_last_trade_operation_date (acc)quot;"/>
+<property name="inputBinding" value="acc_in/px_last_trade_operation_date"/>
+<property name="outputBinding" value="acc_out/px_last_trade_operation_date"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<dataHolder inputId="acc_in" name="#0000A0" type="dataModelerEntry" outId="acc_out" value="com.admiral.diplom.accountmessaging.Account" id="acc"/>
 </form>
