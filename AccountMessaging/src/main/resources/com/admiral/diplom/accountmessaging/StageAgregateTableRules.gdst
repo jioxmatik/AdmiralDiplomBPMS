@@ -38,7 +38,7 @@
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
-          <width>-1</width>
+          <width>302</width>
           <header>test</header>
           <constraintValueType>5</constraintValueType>
           <fieldType>Date</fieldType>
@@ -141,7 +141,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>(new Date()).getTime() - acc.date_entered.getTime()</valueString>
+        <valueString>(new Date()).getTime() - acc.date_entered.getTime() &gt;= 15</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
