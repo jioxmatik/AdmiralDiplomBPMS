@@ -2,7 +2,7 @@ package com.admiral.diplom.accountmessaging;
 
 import java.lang.Number;
 
-rule "ChekcActivitiesRule"
+rule "CheckActivitiesRule"
 	dialect "mvel"
 	when
 	then
