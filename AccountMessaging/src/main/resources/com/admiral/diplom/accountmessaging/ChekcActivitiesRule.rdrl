@@ -1,0 +1,9 @@
+package com.admiral.diplom.accountmessaging;
+
+import java.lang.Number;
+
+rule "ChekcActivitiesRule"
+	dialect "mvel"
+	when
+	then
+end
