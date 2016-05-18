@@ -4,6 +4,7 @@ import java.util.Date;
 
 rule "CheckActivitiesRule"
 	dialect "mvel"
+	ruleflow-group "processCheckFacts"
 	when
 		Account( $accId : id != null )
 		act : Activity( account_id == ( $accId ) , last_day.time <= ( (new Date()).getTime() - (15*24*3600000) ) )
@@ -11,6 +12,6 @@ rule "CheckActivitiesRule"
 		Message fact0 = new Message();
 		fact0.setId( "3" );
 		fact0.setDescription( "email call meeting" );
-		fact0.setAccount_id( $accId );
+		fact0.setAccount_id( ccI );
 		insert( fact0 );
 end
