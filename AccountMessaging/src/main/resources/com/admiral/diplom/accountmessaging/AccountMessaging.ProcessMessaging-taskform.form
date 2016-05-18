@@ -4,15 +4,17 @@
 <property name="name" value="AccountMessaging.ProcessMessaging-taskform.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
-<field position="0" name="acc_date_entered" type="InputDate" id="2084631438">
+<field position="1" name="acc_date_entered" type="InputDate" id="2084631438">
 <property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
 <property name="label" value="quot;enquot;,quot;date_entered (acc)quot;"/>
 <property name="inputBinding" value=""/>
 <property name="outputBinding" value="acc/date_entered"/>
 <property name="fieldClass" value="java.util.Date"/>
 </field>
-<field position="1" name="acc_id" type="InputText" id="1070486004">
+<field position="0" name="acc_id" type="InputText" id="1070486004">
 <property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="false"/>
 <property name="label" value="quot;enquot;,quot;id (acc)quot;"/>
 <property name="inputBinding" value=""/>
 <property name="outputBinding" value="acc/id"/>
@@ -20,10 +22,26 @@
 </field>
 <field position="2" name="acc_px_last_trade_operation_date" type="InputDate" id="2013233857">
 <property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
 <property name="label" value="quot;enquot;,quot;px_last_trade_operation_date (acc)quot;"/>
 <property name="inputBinding" value=""/>
 <property name="outputBinding" value="acc/px_last_trade_operation_date"/>
 <property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="3" name="stage_agregates" type="Subform" id="1881401012">
+<property name="fieldRequired" value="false"/>
+<property name="labelCSSClass" value=""/>
+<property name="labelCSSStyle" value=""/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Stage Agregatesquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="styleclass" value=""/>
+<property name="cssStyle" value=""/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="agg"/>
+<property name="defaultSubform" value="StageAgregates.form"/>
+<property name="fieldClass" value="java.lang.Object"/>
 </field>
 <dataHolder inputId="" name="#0000A0" type="dataModelerEntry" outId="acc" value="com.admiral.diplom.accountmessaging.Account" id="acc"/>
 </form>
