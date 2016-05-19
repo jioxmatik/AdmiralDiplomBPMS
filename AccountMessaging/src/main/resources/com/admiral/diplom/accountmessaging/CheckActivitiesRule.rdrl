@@ -12,6 +12,6 @@ rule "CheckActivitiesRule"
 		Message fact0 = new Message();
 		fact0.setId( "3" );
 		fact0.setDescription( "email call meeting" );
-		fact0.setAccount_id( ccI );
+		fact0.setAccount_id( $accId );
 		insert( fact0 );
 end
