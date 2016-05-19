@@ -4,7 +4,6 @@ import java.util.Date;
 
 rule "CheckActivitiesRule"
 	dialect "mvel"
-	ruleflow-group "processCheckFacts"
 	when
 		Account( $accId : id != null )
 		act : Activity( account_id == ( $accId ) , last_day.time <= ( (new Date()).getTime() - (15*24*3600000) ) )
