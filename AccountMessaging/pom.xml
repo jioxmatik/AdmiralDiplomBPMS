@@ -7,23 +7,6 @@
   <version>0.0.1</version>
   <packaging>kjar</packaging>
   <name>AccountMessaging</name>
-  <dependencies>
-		<dependency>
-           <groupId>org.kie</groupId>
-           <artifactId>kie-ci</artifactId>
-           <version>6.2.0.Final-redhat-4</version>
-		</dependency>
-		<dependency>
-           <groupId>org.kie</groupId>
-           <artifactId>kie-internal</artifactId>
-           <version>6.2.0.Final-redhat-4</version>
-		</dependency>
-		<dependency>
-           <groupId>org.kie</groupId>
-			<artifactId>kie-api</artifactId>
-			<version>6.2.0.Final-redhat-4</version>
-		</dependency>
-  </dependencies>
   <repositories>
     <repository>
       <id>guvnor-m2-repo</id>
@@ -31,24 +14,23 @@
       <url>http://196.1.7.25:8080/business-central/maven2/</url>
     </repository>
     <repository>
-        <id>jboss-maven-repository</id>
-        <name>JBoss Maven Repository</name>
-        <url>http://maven.repository.redhat.com/techpreview/all/</url>
-        <layout>default</layout>
-        <releases>
-            <enabled>true</enabled>
-            <updatePolicy>never</updatePolicy>
-        </releases>
-        <snapshots>
-            <enabled>false</enabled>
-            <updatePolicy>never</updatePolicy>
-        </snapshots>
+      <releases>
+        <enabled>true</enabled>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+        <updatePolicy>never</updatePolicy>
+      </snapshots>
+      <id>jboss-maven-repository</id>
+      <name>JBoss Maven Repository</name>
+      <url>http://maven.repository.redhat.com/techpreview/all/</url>
     </repository>
   </repositories>
   <build>
     <plugins>
       <plugin>
-         <groupId>org.kie</groupId>
+        <groupId>org.kie</groupId>
         <artifactId>kie-maven-plugin</artifactId>
         <version>6.2.0.Final-redhat-4</version>
         <extensions>true</extensions>
