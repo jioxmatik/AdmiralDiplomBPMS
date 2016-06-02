@@ -6,7 +6,7 @@ rule "CheckActivitiesRule"
 	dialect "mvel"
 	when
 		Account( $accId : id != null )
-		( act : Activity( account_id == ( $accId ) , last_day <= ( new Date(new Date().getTime() - (15*24*3600*1000)) ) ) )
+		act : Activity( account_id == ( $accId ) , last_day before ( new Date(new Date().getTime() - (15*24*3600*1000)) ) )
 	then
 		Message fact0 = new Message();
 		fact0.setId( "3" );
