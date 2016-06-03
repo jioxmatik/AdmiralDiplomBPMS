@@ -53,7 +53,6 @@
           <width>-1</width>
           <header>Created greater than</header>
           <constraintValueType>5</constraintValueType>
-          <fieldType>Date</fieldType>
           <parameters>
             <entry>
               <string>org.drools.workbench.models.commons.backend.rule.operatorParameterGenerator</string>
@@ -71,7 +70,6 @@
           <width>171</width>
           <header>Trade Operation less than</header>
           <constraintValueType>5</constraintValueType>
-          <fieldType>Date</fieldType>
           <parameters>
             <entry>
               <string>org.drools.workbench.models.commons.backend.rule.operatorParameterGenerator</string>
@@ -132,7 +130,6 @@
           <width>-1</width>
           <header>Moved less than</header>
           <constraintValueType>5</constraintValueType>
-          <fieldType>Date</fieldType>
           <parameters>
             <entry>
               <string>org.drools.workbench.models.commons.backend.rule.operatorParameterGenerator</string>
@@ -150,7 +147,6 @@
           <width>-1</width>
           <header>Moved greater than</header>
           <constraintValueType>5</constraintValueType>
-          <fieldType>Date</fieldType>
           <parameters>
             <entry>
               <string>org.drools.workbench.models.commons.backend.rule.operatorParameterGenerator</string>
