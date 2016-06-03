@@ -5,12 +5,10 @@ import java.util.Date;
 rule "CheckActivitiesRule"
 	dialect "mvel"
 	when
-		$acc : Account( $accId : id != null )
-		act : Activity( account_id == ( $accId ) , eval( last_day.getTime() <= (new Date().getTime() - (15*24*3600*1000)) ))
+		act : Activity( eval( last_day.getTime() <= (new Date().getTime() - (15*24*3600*1000)) ))
 	then
 		Message fact0 = new Message();
 		fact0.setId( "3" );
 		fact0.setDescription( "email call meeting" );
-		fact0.setAccount_id( $accId );
 		insert( fact0 );
 end
