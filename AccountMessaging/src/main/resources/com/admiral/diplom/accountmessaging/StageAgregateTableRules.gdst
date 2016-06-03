@@ -328,7 +328,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString>date_entered.getTime() &gt; (new Date().getTime() - (15*24*3600*1000))</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -396,12 +396,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>$acc.date_entered.getTime() &lt;= (new Date().getTime() - (15*24*3600*1000))</valueString>
+        <valueString>date_entered.getTime() &lt;= (new Date().getTime() - (15*24*3600*1000))</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>$acc.date_entered.getTime() &gt; (new Date().getTime() - (30*24*3600*1000))</valueString>
+        <valueString>date_entered.getTime() &gt; (new Date().getTime() - (30*24*3600*1000))</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -469,7 +469,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>$acc.date_entered.getTime() &lt;= (new Date().getTime() - (30*24*3600*1000))</valueString>
+        <valueString>date_entered.getTime() &lt;= (new Date().getTime() - (30*24*3600*1000))</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -567,12 +567,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>agregate.stage_moved_date.getTime() &lt;= (new Date().getTime() - (15*24*3600*1000))</valueString>
+        <valueString>stage_moved_date.getTime() &lt;= (new Date().getTime() - (15*24*3600*1000))</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>agregate.stage_moved_date.getTime() &gt; (new Date().getTime() - (15*24*3600*1000))</valueString>
+        <valueString>stage_moved_date.getTime() &gt; (new Date().getTime() - (15*24*3600*1000))</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -640,7 +640,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>agregate.stage_moved_date.getTime() &lt;= (new Date().getTime() - (30*24*3600*1000))</valueString>
+        <valueString>stage_moved_date.getTime() &lt;= (new Date().getTime() - (30*24*3600*1000))</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -713,12 +713,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>agregate.stage_moved_date.getTime() &lt;= (new Date().getTime() - (15*24*3600*1000))</valueString>
+        <valueString>stage_moved_date.getTime() &lt;= (new Date().getTime() - (15*24*3600*1000))</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>agregate.stage_moved_date.getTime() &gt; (new Date().getTime() - (15*24*3600*1000))</valueString>
+        <valueString>stage_moved_date.getTime() &gt; (new Date().getTime() - (15*24*3600*1000))</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -786,7 +786,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>agregate.stage_moved_date.getTime() &lt;= (new Date().getTime() - (30*24*3600*1000))</valueString>
+        <valueString>stage_moved_date.getTime() &lt;= (new Date().getTime() - (30*24*3600*1000))</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -859,12 +859,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>agregate.stage_moved_date.getTime() &lt;= (new Date().getTime() - (15*24*3600*1000))</valueString>
+        <valueString>stage_moved_date.getTime() &lt;= (new Date().getTime() - (15*24*3600*1000))</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>agregate.stage_moved_date.getTime() &gt; (new Date().getTime() - (15*24*3600*1000))</valueString>
+        <valueString>stage_moved_date.getTime() &gt; (new Date().getTime() - (15*24*3600*1000))</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -932,7 +932,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>agregate.stage_moved_date.getTime() &lt;= (new Date().getTime() - (30*24*3600*1000))</valueString>
+        <valueString>stage_moved_date.getTime() &lt;= (new Date().getTime() - (30*24*3600*1000))</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1005,12 +1005,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>agregate.stage_moved_date.getTime() &lt;= (new Date().getTime() - (15*24*3600*1000))</valueString>
+        <valueString>stage_moved_date.getTime() &lt;= (new Date().getTime() - (15*24*3600*1000))</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>agregate.stage_moved_date.getTime() &gt; (new Date().getTime() - (15*24*3600*1000))</valueString>
+        <valueString>stage_moved_date.getTime() &gt; (new Date().getTime() - (15*24*3600*1000))</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1078,7 +1078,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>agregate.stage_moved_date.getTime() &lt;= (new Date().getTime() - (30*24*3600*1000))</valueString>
+        <valueString>stage_moved_date.getTime() &lt;= (new Date().getTime() - (30*24*3600*1000))</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1151,12 +1151,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>agregate.stage_moved_date.getTime() &lt;= (new Date().getTime() - (15*24*3600*1000))</valueString>
+        <valueString>stage_moved_date.getTime() &lt;= (new Date().getTime() - (15*24*3600*1000))</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>agregate.stage_moved_date.getTime() &gt; (new Date().getTime() - (15*24*3600*1000))</valueString>
+        <valueString>stage_moved_date.getTime() &gt; (new Date().getTime() - (15*24*3600*1000))</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1224,7 +1224,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>agregate.stage_moved_date.getTime() &lt;= (new Date().getTime() - (30*24*3600*1000))</valueString>
+        <valueString>stage_moved_date.getTime() &lt;= (new Date().getTime() - (30*24*3600*1000))</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1297,12 +1297,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>agregate.stage_moved_date.getTime() &lt;= (new Date().getTime() - (15*24*3600*1000))</valueString>
+        <valueString>stage_moved_date.getTime() &lt;= (new Date().getTime() - (15*24*3600*1000))</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>agregate.stage_moved_date.getTime() &gt; (new Date().getTime() - (15*24*3600*1000))</valueString>
+        <valueString>stage_moved_date.getTime() &gt; (new Date().getTime() - (15*24*3600*1000))</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1370,7 +1370,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>agregate.stage_moved_date.getTime() &lt;= (new Date().getTime() - (30*24*3600*1000))</valueString>
+        <valueString>stage_moved_date.getTime() &lt;= (new Date().getTime() - (30*24*3600*1000))</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1443,12 +1443,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>agregate.stage_moved_date.getTime() &lt;= (new Date().getTime() - (15*24*3600*1000))</valueString>
+        <valueString>stage_moved_date.getTime() &lt;= (new Date().getTime() - (15*24*3600*1000))</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>agregate.stage_moved_date.getTime() &gt; (new Date().getTime() - (15*24*3600*1000))</valueString>
+        <valueString>stage_moved_date.getTime() &gt; (new Date().getTime() - (15*24*3600*1000))</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1516,7 +1516,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>agregate.stage_moved_date.getTime() &lt;= (new Date().getTime() - (30*24*3600*1000))</valueString>
+        <valueString>stage_moved_date.getTime() &lt;= (new Date().getTime() - (30*24*3600*1000))</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1574,7 +1574,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>$acc.px_last_trade_operation_date.getTime() &lt;= (new Date().getTime() - (15*24*3600*1000))</valueString>
+        <valueString>px_last_trade_operation_date.getTime() &lt;= (new Date().getTime() - (15*24*3600*1000))</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1662,7 +1662,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>agregate.stage_moved_date.getTime() &lt;= (new Date().getTime() - (15*24*3600*1000))</valueString>
+        <valueString>stage_moved_date.getTime() &lt;= (new Date().getTime() - (15*24*3600*1000))</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1735,7 +1735,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>agregate.stage_moved_date.getTime() &lt;= (new Date().getTime() - (15*24*3600*1000))</valueString>
+        <valueString>stage_moved_date.getTime() &lt;= (new Date().getTime() - (15*24*3600*1000))</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1808,7 +1808,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>agregate.stage_moved_date.getTime() &lt;= (new Date().getTime() - (15*24*3600*1000))</valueString>
+        <valueString>stage_moved_date.getTime() &lt;= (new Date().getTime() - (15*24*3600*1000))</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1881,7 +1881,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>agregate.stage_moved_date.getTime() &lt;= (new Date().getTime() - (15*24*3600*1000))</valueString>
+        <valueString>stage_moved_date.getTime() &lt;= (new Date().getTime() - (15*24*3600*1000))</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
