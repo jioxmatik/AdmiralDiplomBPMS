@@ -157,6 +157,9 @@
           <boundName>mes</boundName>
           <isBound>true</isBound>
         </org.drools.workbench.models.datamodel.rule.ActionInsertFact>
+        <org.drools.workbench.models.datamodel.rule.FreeFormLine>
+          <text>System.out.println(&quot;DEBUG::::Message have description: &quot; + mes.getDescription() );</text>
+        </org.drools.workbench.models.datamodel.rule.FreeFormLine>
       </definition>
       <childColumns>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
