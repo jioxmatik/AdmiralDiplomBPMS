@@ -4,6 +4,8 @@ import java.lang.Number;
 
 rule "Test"
 	dialect "java"
+	enabled true
+	salience 0
 	when
 		PxCustomerStageAgregate( stage == "1.Lead" )
 	then
