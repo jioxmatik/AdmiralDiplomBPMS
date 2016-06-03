@@ -131,32 +131,6 @@
       </window>
       <entryPointName></entryPointName>
     </Pattern52>
-    <Pattern52>
-      <factType>Message</factType>
-      <boundName></boundName>
-      <isNegated>true</isNegated>
-      <conditions>
-        <condition-column52>
-          <typedDefaultValue>
-            <valueString>1</valueString>
-            <dataType>STRING</dataType>
-            <isOtherwise>false</isOtherwise>
-          </typedDefaultValue>
-          <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>Equal message id</header>
-          <constraintValueType>1</constraintValueType>
-          <factField>id</factField>
-          <fieldType>String</fieldType>
-          <operator>==</operator>
-          <parameters/>
-        </condition-column52>
-      </conditions>
-      <window>
-        <operator></operator>
-        <parameters/>
-      </window>
-    </Pattern52>
   </conditionPatterns>
   <actionCols>
     <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
@@ -286,11 +260,6 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
         <valueString>email instuctions</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -340,11 +309,6 @@
       </value>
       <value>
         <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -402,11 +366,6 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
         <valueString>email questions + bonus</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -456,11 +415,6 @@
       </value>
       <value>
         <valueString>stage_moved_date.getTime() &gt; (new Date().getTime() - (15*24*3600*1000))</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -518,11 +472,6 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
         <valueString>email questions + demo</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -572,11 +521,6 @@
       </value>
       <value>
         <valueString>stage_moved_date.getTime() &gt; (new Date().getTime() - (15*24*3600*1000))</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -634,11 +578,6 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
         <valueString>email questions + bonus</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -688,11 +627,6 @@
       </value>
       <value>
         <valueString>stage_moved_date.getTime() &gt; (new Date().getTime() - (15*24*3600*1000))</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -750,11 +684,6 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
         <valueString>call real + example</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -804,11 +733,6 @@
       </value>
       <value>
         <valueString>stage_moved_date.getTime() &gt; (new Date().getTime() - (15*24*3600*1000))</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -866,11 +790,6 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
         <valueString>call real + bonus</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -920,11 +839,6 @@
       </value>
       <value>
         <valueString>stage_moved_date.getTime() &gt; (new Date().getTime() - (15*24*3600*1000))</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -982,11 +896,6 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
         <valueString>call real + lesson + example</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -1036,11 +945,6 @@
       </value>
       <value>
         <valueString>stage_moved_date.getTime() &gt; (new Date().getTime() - (15*24*3600*1000))</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1098,11 +1002,6 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
         <valueString>call real + lesson</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -1152,11 +1051,6 @@
       </value>
       <value>
         <valueString>stage_moved_date.getTime() &gt; (new Date().getTime() - (15*24*3600*1000))</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1214,11 +1108,6 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
         <valueString>call real + lesson + example</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -1268,11 +1157,6 @@
       </value>
       <value>
         <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1330,11 +1214,6 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>2</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
         <valueString>email call meeting</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -1384,11 +1263,6 @@
       </value>
       <value>
         <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>2</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1446,11 +1320,6 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>2</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
         <valueString>email call meeting</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -1504,11 +1373,6 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>2</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
         <valueString>email call meeting</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -1548,11 +1412,6 @@
       </value>
       <value>
         <valueString>1.Lead</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
