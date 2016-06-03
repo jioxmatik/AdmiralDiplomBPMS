@@ -5,5 +5,8 @@ import java.lang.Number;
 rule "Test"
 	dialect "mvel"
 	when
+		$csa : PxCustomerStageAgregate( stage == "1.Lead" )
 	then
+		$csa.setStage( "10.Test" );
+		update( $csa );
 end
