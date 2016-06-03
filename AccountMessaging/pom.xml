@@ -8,12 +8,12 @@
   <packaging>kjar</packaging>
   <name>AccountMessaging</name>
   <dependencies>
-        <dependency>
-            <groupId>org.kie</groupId>
-            <artifactId>kie-api</artifactId>
-            <version>6.2.0.Final-redhat-4</version>
-        </dependency>
-	</dependencies>	
+    <dependency>
+      <groupId>org.kie</groupId>
+      <artifactId>kie-api</artifactId>
+      <version>6.2.0.Final-redhat-4</version>
+    </dependency>
+  </dependencies>
   <repositories>
     <repository>
       <id>guvnor-m2-repo</id>
@@ -21,14 +21,6 @@
       <url>http://196.1.7.25:8080/business-central/maven2/</url>
     </repository>
     <repository>
-      <releases>
-        <enabled>true</enabled>
-        <updatePolicy>never</updatePolicy>
-      </releases>
-      <snapshots>
-        <enabled>false</enabled>
-        <updatePolicy>never</updatePolicy>
-      </snapshots>
       <id>jboss-maven-repository</id>
       <name>JBoss Maven Repository</name>
       <url>http://maven.repository.redhat.com/techpreview/all/</url>
