@@ -11,12 +11,7 @@
     <repository>
       <id>guvnor-m2-repo</id>
       <name>Guvnor M2 Repo</name>
-      <url>http://196.1.7.25:8080/business-central/maven2/</url>
-    </repository>
-    <repository>
-      <id>jboss-maven-repository</id>
-      <name>JBoss Maven Repository</name>
-      <url>http://maven.repository.redhat.com/techpreview/all/</url>
+      <url>http://196.1.5.46:8080/business-central/maven2/</url>
     </repository>
   </repositories>
   <build>
@@ -24,7 +19,7 @@
       <plugin>
         <groupId>org.kie</groupId>
         <artifactId>kie-maven-plugin</artifactId>
-        <version>6.2.0.Final-redhat-4</version>
+        <version>6.0.3-redhat-4</version>
         <extensions>true</extensions>
       </plugin>
     </plugins>
