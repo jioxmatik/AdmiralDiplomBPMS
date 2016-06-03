@@ -1,0 +1,9 @@
+package com.admiral.diplom.accountmessaging;
+
+import java.lang.Number;
+
+rule "Test"
+	dialect "mvel"
+	when
+	then
+end
