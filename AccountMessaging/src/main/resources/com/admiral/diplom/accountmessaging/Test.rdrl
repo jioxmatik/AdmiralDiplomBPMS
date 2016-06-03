@@ -3,11 +3,12 @@ package com.admiral.diplom.accountmessaging;
 import java.lang.Number;
 
 rule "Test"
-	dialect "mvel"
+	dialect "java"
 	when
+		PxCustomerStageAgregate( stage == "1.Lead" )
 	then
-		Message test = new Message();
-		test.setId( "123" );
-		test.setDescription( "test" );
-		insertLogical( test );
+		Message fact0 = new Message();
+		fact0.setId( "123" );
+		fact0.setDescription( "test" );
+		insertLogical( fact0 );
 end
