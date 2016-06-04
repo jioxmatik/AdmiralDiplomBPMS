@@ -3,7 +3,14 @@ package com.admiral.diplom.accountmessaging;
 import java.lang.Number;
 
 rule "TestDRL"
-	dialect "mvel"
+	dialect "java"
+	ruleflow-group "fire-test"
 	when
 	then
+		Message $mes = new Message();
+		$mes.setId( "123" );
+		$mes.setDescription( "test" );
+		$mes.setAccount_id( "123" );
+		insert( $mes );
+		System.out.println("DEBUG:::TEST RULE FIRED");
 end
