@@ -1,16 +1,17 @@
 package com.admiral.diplom.accountmessaging;
 
 import java.lang.Number;
+import java.util.Date;
 
 rule "Test"
 	dialect "java"
 	enabled true
-	salience 0
 	when
-		PxCustomerStageAgregate( stage == "1.Lead" )
+		$agg : PxCustomerStageAgregate( stage == "1.Lead" )
 	then
 		Message fact0 = new Message();
 		fact0.setId( "123" );
 		fact0.setDescription( "test" );
 		insertLogical( fact0 );
+		System.out.println("\n\n\nDEBUG:::FIRED TEST DRL\n\n\n");
 end
