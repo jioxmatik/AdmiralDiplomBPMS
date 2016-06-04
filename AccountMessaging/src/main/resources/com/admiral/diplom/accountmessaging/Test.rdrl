@@ -2,16 +2,19 @@ package com.admiral.diplom.accountmessaging;
 
 import java.lang.Number;
 import java.util.Date;
+import java.util.Calendar;
 
 rule "Test"
 	dialect "java"
 	enabled true
 	when
 		$agg : PxCustomerStageAgregate( stage == "1.Lead" )
+		Date($now:time) from Calendar.getInstance().getTime();
 	then
 		Message fact0 = new Message();
 		fact0.setId( "123" );
 		fact0.setDescription( "test" );
 		insertLogical( fact0 );
 		System.out.println("\n\n\nDEBUG:::FIRED TEST DRL\n\n\n");
+		System.out.println("\n\n\nDEBUG::: $now = " + $now);
 end
