@@ -24,6 +24,10 @@ Clone this repository https://github.com/jioxmatik/AdmiralDiplomBPMS.git in to B
 
 Go to page Authoring -> Project authoring select AccountMessaging project, open project editor and press button (Build and Deploy).
 
+### Additing AccountMessageData facts in BPMS
+
+Form AccountMessageData target folder copy jar file and upload in Bpms artifact repository
+
 ### Testing
 
 Open REST client and send in BPMS REST service some request 

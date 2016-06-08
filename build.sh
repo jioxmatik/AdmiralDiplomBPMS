@@ -2,7 +2,7 @@
 
 # List of projects to build in the CORRECT ORDER.
 projects=(\
-    "AccountMessaging"\
+    "AccountMessagingData"\
     "bpms-service"\
 )
 
